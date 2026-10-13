@@ -10,9 +10,9 @@ from scipy.spatial import cKDTree
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_2972.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_plus_1728.csv",
+    "/data/loto7_4700_k81.csv",
+    "/data/loto7_4700_k81_loto_2972.csv",
+    "/data/loto7_4700_k81_loto_plus_1728.csv",
 )
 
 WINDOW, STARTS = 96, 12
@@ -773,13 +773,13 @@ if __name__ == "__main__":
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81.csv
+CSV: /data/loto7_4700_k81.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 MCCULLOCH-PITTS: LOGIKA I VREMENSKI USLOVI: alpha=0.1, prosek=1.3281, pogoci 0..7=[7, 31, 24, 2, 0, 0, 0, 0]
 Kontrola: bez vremenskih logickih uslova: alpha=1, prosek=1.1875, pogoci 0..7=[16, 27, 15, 5, 1, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.2344
-SLEDECI RED 4701: 4,5,8,10,19,36,38
+SLEDECI RED 4701: 4,x,8,y,19,z,38
 Skor=1.7158862108; koraci=7; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
@@ -787,13 +787,13 @@ Ucenje skalarnog izlaznog skora je dodatak originalnoj logickoj mrezi.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_2972.csv
+CSV: /data/loto7_4700_k81_loto_2972.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 MCCULLOCH-PITTS: LOGIKA I VREMENSKI USLOVI: alpha=1, prosek=1.0312, pogoci 0..7=[19, 29, 13, 1, 2, 0, 0, 0]
 Kontrola: bez vremenskih logickih uslova: alpha=0.1, prosek=1.4375, pogoci 0..7=[11, 27, 17, 5, 4, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.3281
-SLEDECI RED 2973: 17,25,26,27,32,36,38
+SLEDECI RED 2973: 17,x,26,y,32,z,38
 Skor=1.5437126169; koraci=8; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
@@ -801,13 +801,13 @@ Ucenje skalarnog izlaznog skora je dodatak originalnoj logickoj mrezi.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_plus_1728.csv
+CSV: /data/loto7_4700_k81_loto_plus_1728.csv
 Hronologija: CSV mora biti od najstarijeg ka najnovijem kolu.
 Validacija: 48; odvojeni test: 64
 MCCULLOCH-PITTS: LOGIKA I VREMENSKI USLOVI: alpha=0.1, prosek=1.2812, pogoci 0..7=[18, 19, 18, 9, 0, 0, 0, 0]
 Kontrola: bez vremenskih logickih uslova: alpha=0.01, prosek=1.4062, pogoci 0..7=[11, 27, 15, 11, 0, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: 1.2969
-SLEDECI RED 1729: 1,2,3,12,29,35,38
+SLEDECI RED 1729: 1,x,3,y,29,z,38
 Skor=2.0614609975; koraci=6; istorijsko ponavljanje=False
 Skor nije verovatnoca. Pretraga: istorijska polazista i dozvoljene
 zamene jednog broja; lokalni optimum, bez tvrdnje o globalnom.
@@ -843,8 +843,8 @@ Proverena na 48 validacionih i 64 odvojena testna kola.
 Vremenski logički uslovi pomogli su na zbirnom fajlu, ali nisu doneli dosledno poboljšanje.
 
 CSV	        Prosek pogodaka	Bez vremenskih uslova	Sledeća kombinacija
-Zbirni 4700	1,3281	        1,1875	                4,5,8,10,19,36,38
-Loto 2972	1,0312	        1,4375	                17,25,26,27,32,36,38
-Plus 1728	1,2812	        1,4062	                1,2,3,12,29,35,38
+Zbirni 4700	1,3281	        1,1875	                4,x,8,y,19,z,38
+Loto 2972	1,0312	        1,4375	                17,x,26,y,32,z,38
+Plus 1728	1,2812	        1,4062	                1,x,3,y,29,z,38
 
 """
