@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Walter Pitts V2: empirijski zajednicki prelazi i pragovna logika."""
 
 import argparse
@@ -10,9 +11,9 @@ from scipy.spatial import cKDTree
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_2972.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_plus_1728.csv",
+    "/data/loto7_4700_k81.csv",
+    "/data/loto7_4700_k81_loto_2972.csv",
+    "/data/loto7_4700_k81_loto_plus_1728.csv",
 )
 
 WINDOW = 384
@@ -867,7 +868,7 @@ if __name__ == "__main__":
 
 
 """
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81.csv
+CSV: /data/loto7_4700_k81.csv
 CSV mora biti hronoloski: najstarije kolo prvo.
 Validacija=48; odvojeni test=64; parametri=(0.5, 0.1, 0.1)
 WALTER V2: prosek=1.2500; pogoci 0..7=[13, 28, 17, 6, 0, 0, 0, 0]
@@ -876,7 +877,7 @@ Nizovi od najmanje 5: model/stvarna kola = 0 0
 Unutrasnja praznina najmanje 20: model/stvarna kola = 0 1
 Istorijska ponavljanja na testu: 0
 Razlicitih testnih izbora: 64 ; najvece ponavljanje iste sedmorke: 1
-SLEDECI RED 4701: 2,6,18,24,27,34,36
+SLEDECI RED 4701: 2,x,18,y,27,z,36
 Skor=-6.4887691301; svi koraci=7; istorijsko ponavljanje=False
 Najduzi uzastopni niz=1; najveca unutrasnja praznina=11
 Skor je empirijska podrska, nije kalibrisana verovatnoca pogotka.
@@ -885,7 +886,7 @@ Globalni maksimum nije potvrden; nema zabrane grupisanih brojeva.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_2972.csv
+CSV: /data/loto7_4700_k81_loto_2972.csv
 CSV mora biti hronoloski: najstarije kolo prvo.
 Validacija=48; odvojeni test=64; parametri=(1.0, 0.25, 0.1)
 WALTER V2: prosek=1.4844; pogoci 0..7=[9, 25, 21, 8, 1, 0, 0, 0]
@@ -894,7 +895,7 @@ Nizovi od najmanje 5: model/stvarna kola = 0 0
 Unutrasnja praznina najmanje 20: model/stvarna kola = 0 1
 Istorijska ponavljanja na testu: 9
 Razlicitih testnih izbora: 64 ; najvece ponavljanje iste sedmorke: 1
-SLEDECI RED 2973: 7,8,18,23,33,36,37
+SLEDECI RED 2973: 7,x,18,y,33,z,37
 Skor=-5.9077992876; svi koraci=36; istorijsko ponavljanje=False
 Najduzi uzastopni niz=2; najveca unutrasnja praznina=9
 Skor je empirijska podrska, nije kalibrisana verovatnoca pogotka.
@@ -903,7 +904,7 @@ Globalni maksimum nije potvrden; nema zabrane grupisanih brojeva.
 
 
 
-CSV: /Users/4c/Desktop/GHQ/data/loto7_4700_k81_loto_plus_1728.csv
+CSV: /data/loto7_4700_k81_loto_plus_1728.csv
 CSV mora biti hronoloski: najstarije kolo prvo.
 Validacija=48; odvojeni test=64; parametri=(0.5, 0.1, 0.1)
 WALTER V2: prosek=1.3750; pogoci 0..7=[8, 29, 22, 5, 0, 0, 0, 0]
@@ -912,7 +913,7 @@ Nizovi od najmanje 5: model/stvarna kola = 0 0
 Unutrasnja praznina najmanje 20: model/stvarna kola = 0 1
 Istorijska ponavljanja na testu: 0
 Razlicitih testnih izbora: 64 ; najvece ponavljanje iste sedmorke: 1
-SLEDECI RED 1729: 15,18,23,31,35,38,39
+SLEDECI RED 1729: 15,x,23,y,35,z,39
 Skor=-7.5419823544; svi koraci=18; istorijsko ponavljanje=False
 Najduzi uzastopni niz=2; najveca unutrasnja praznina=7
 Skor je empirijska podrska, nije kalibrisana verovatnoca pogotka.
